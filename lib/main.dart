@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = FavoritesPage();
         break;
       default:
-        throw UnimplementedError('No widget for $selectedIndex');
+        throw UnimplementedError('There is no widget for $selectedIndex');
     }
 
     return LayoutBuilder(builder: (context, constraints) {
