@@ -1,0 +1,12 @@
+name: Copy To Docs Folder
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copy Flutter Web to Docs Folder
+        run: |
+          cp -a /ScreenNameGenerator/build/web docs
