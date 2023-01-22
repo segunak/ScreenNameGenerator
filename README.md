@@ -1,6 +1,6 @@
 # Screen Name Generator
 
-A Flutter application that generates a random screen name.
+An overwhelmingly pedestrian Flutter application that generates a random screen name. Built for learning purposes.
 
 ## Why Though
 
