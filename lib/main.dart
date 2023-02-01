@@ -192,12 +192,21 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.onPrimary,
     );
 
+    var subHeadingStyle = TextStyle(fontSize: 14, color: Colors.white);
+
     return Card(
       color: theme.colorScheme.primary,
       elevation: 5,
       child: Padding(
         padding: const EdgeInsets.all(20),
-        child: Text(pair.asPascalCase, style: style),
+        child: Column(
+          children: [
+            Text(pair.asPascalCase, style: style),
+            Text(
+                'Supreme Chancellor, Indefatigable Sovereign, Pusher of Buttons',
+                style: subHeadingStyle)
+          ],
+        ),
       ),
     );
   }
